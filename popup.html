@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TabscrAIp</title>
+    <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>TabscrAIp</h1>
+            <p class="subtitle">AI-Powered Web Scraper</p>
+        </header>
+
+        <section class="api-config">
+            <h2>API Configuration</h2>
+            <div class="input-group">
+                <label for="apiKey">Claude API Key:</label>
+                <input type="password" id="apiKey" placeholder="Enter your Claude API key">
+                <button id="saveApiKey">Save</button>
+            </div>
+            <div id="apiStatus" class="status-message"></div>
+        </section>
+
+        <section class="scraper-controls">
+            <h2>Scraping Options</h2>
+            <div class="button-group">
+                <button id="scrapeButton" class="primary-btn">
+                    <span class="icon">🔍</span>
+                    Scrape Current Page
+                </button>
+            </div>
+            <div id="scrapeStatus" class="status-message"></div>
+            <div id="progressBar" class="progress-bar hidden">
+                <div class="progress-fill"></div>
+            </div>
+        </section>
+
+        <section id="resultsSection" class="results hidden">
+            <h2>Scraped Data</h2>
+            <div class="table-controls">
+                <button id="exportCsv" class="secondary-btn">Export CSV</button>
+                <button id="exportJson" class="secondary-btn">Export JSON</button>
+            </div>
+            <div id="tableContainer" class="table-container"></div>
+        </section>
+    </div>
+    <script src="popup.js"></script>
+</body>
+</html>
