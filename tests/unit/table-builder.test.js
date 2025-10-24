@@ -1,13 +1,19 @@
 // Unit tests for table builder
 
 describe('Table builder', () => {
-  test('should be defined', () => {
-    expect(true).toBe(true);
+  test('should build table from schema and data', () => {
+    fail('To Be Coded');
   });
   
-  // TODO: Add actual tests for table-builder.js functions
-  test.todo('should build table from schema and data');
-  test.todo('should sort table by column');
-  test.todo('should group table by column');
-  test.todo('should handle URL type fields with links');
+  test('should sort table by column', () => {
+    fail('To Be Coded');
+  });
+  
+  test('should group table by column', () => {
+    fail('To Be Coded');
+  });
+  
+  test('should handle URL type fields with links', () => {
+    fail('To Be Coded');
+  });
 });

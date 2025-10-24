@@ -1,12 +1,15 @@
 // Unit tests for API client
 
 describe('API client', () => {
-  test('should be defined', () => {
-    expect(true).toBe(true);
+  test('should call Claude API via proxy', () => {
+    fail('To Be Coded');
   });
   
-  // TODO: Add actual tests for api-client.js functions
-  test.todo('should call Claude API via proxy');
-  test.todo('should handle API errors gracefully');
-  test.todo('should extract data from URL');
+  test('should handle API errors gracefully', () => {
+    fail('To Be Coded');
+  });
+  
+  test('should extract data from URL', () => {
+    fail('To Be Coded');
+  });
 });

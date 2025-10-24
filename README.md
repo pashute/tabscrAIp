@@ -13,6 +13,10 @@ A Chrome extension that intelligently scrapes and structures web content for the
   - Inline with the main table (merged columns)
   - As expandable subtables for each row
 
+## Future Features
+
+- **Prepare for automated scraping (without AI)**: Extract and save field mappings and output structure from AI scraping sessions to enable recursive scraping of pages and subpages without requiring AI calls on subsequent visits
+
 ## Testing
 
 See [Testing.md](Testing.md) for detailed instructions on running unit tests and E2E tests.

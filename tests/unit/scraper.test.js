@@ -1,13 +1,19 @@
 // Unit tests for scraper utilities
 
 describe('Scraper utilities', () => {
-  test('should be defined', () => {
-    expect(true).toBe(true);
+  test('should extract links from HTML', () => {
+    fail('To Be Coded');
   });
   
-  // TODO: Add actual tests for scraper.js functions
-  test.todo('should extract links from HTML');
-  test.todo('should extract tables from HTML');
-  test.todo('should extract metadata');
-  test.todo('should extract main text content');
+  test('should extract tables from HTML', () => {
+    fail('To Be Coded');
+  });
+  
+  test('should extract metadata', () => {
+    fail('To Be Coded');
+  });
+  
+  test('should extract main text content', () => {
+    fail('To Be Coded');
+  });
 });
