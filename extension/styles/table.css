@@ -1,0 +1,100 @@
+/* Table component styles */
+
+.scraip-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+  background-color: white;
+}
+
+.scraip-table thead {
+  background-color: #f5f5f5;
+  border-bottom: 2px solid #ddd;
+}
+
+.scraip-table th {
+  padding: 12px 8px;
+  text-align: left;
+  font-weight: 600;
+  color: #333;
+  white-space: nowrap;
+}
+
+.scraip-table th.sortable {
+  cursor: pointer;
+  user-select: none;
+}
+
+.scraip-table th.sortable:hover {
+  background-color: #e0e0e0;
+}
+
+.scraip-table th.sortable::after {
+  content: ' ⇅';
+  opacity: 0.3;
+}
+
+.scraip-table th.sorted-asc::after {
+  content: ' ↑';
+  opacity: 1;
+}
+
+.scraip-table th.sorted-desc::after {
+  content: ' ↓';
+  opacity: 1;
+}
+
+.scraip-table tbody tr {
+  border-bottom: 1px solid #eee;
+}
+
+.scraip-table tbody tr:hover {
+  background-color: #f9f9f9;
+}
+
+.scraip-table td {
+  padding: 10px 8px;
+  color: #555;
+}
+
+.scraip-table td a {
+  color: #1976d2;
+  text-decoration: none;
+}
+
+.scraip-table td a:hover {
+  text-decoration: underline;
+}
+
+/* Expandable subtable styles */
+.scraip-table .expandable {
+  cursor: pointer;
+}
+
+.scraip-table .expandable::before {
+  content: '▶ ';
+  display: inline-block;
+  transition: transform 0.2s;
+}
+
+.scraip-table .expandable.expanded::before {
+  transform: rotate(90deg);
+}
+
+.scraip-table .subtable-row {
+  display: none;
+  background-color: #f9f9f9;
+}
+
+.scraip-table .subtable-row.visible {
+  display: table-row;
+}
+
+.scraip-table .subtable-cell {
+  padding: 16px;
+}
+
+.scraip-table .subtable {
+  margin: 0;
+  border: 1px solid #ddd;
+}

@@ -1,0 +1,28 @@
+{
+  "name": "tabscraip-tests",
+  "version": "0.1.0",
+  "description": "Tests for TabscrAIp extension",
+  "scripts": {
+    "test": "jest",
+    "test:unit": "jest tests/unit",
+    "test:e2e": "jest tests/e2e",
+    "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "@types/jest": "^29.5.5",
+    "jest-environment-jsdom": "^29.7.0",
+    "puppeteer": "^21.5.0"
+  },
+  "jest": {
+    "testEnvironment": "jsdom",
+    "testMatch": [
+      "**/tests/**/*.test.js"
+    ],
+    "collectCoverageFrom": [
+      "../extension/**/*.js",
+      "!../extension/**/node_modules/**"
+    ]
+  }
+}
