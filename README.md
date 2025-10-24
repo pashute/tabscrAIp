@@ -16,6 +16,7 @@ A Chrome extension that intelligently scrapes and structures web content for the
 ## Future Features
 
 - **Prepare for automated scraping (without AI)**: Extract and save field mappings and output structure from AI scraping sessions to enable recursive scraping of pages and subpages without requiring AI calls on subsequent visits
+- **Pagination/Scroll handling**: Detect and handle paginated content and infinite scroll to automatically load and scrape all available data across multiple pages or scroll events
 
 ## Testing
 
